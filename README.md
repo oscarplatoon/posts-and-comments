@@ -16,4 +16,4 @@ Set up your database with your two associated models and migrate them into your 
 Populate the database using the Django shell. Create 3 posts with 2 comments associated with them.
 
 ## Release 4
-Create your HTML views using helper methods and generic, Class-Based Views.
+Create your HTML views using helper methods
