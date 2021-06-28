@@ -1,0 +1,8 @@
+<h1>{{current_post.title}}</h1>
+
+<ul>
+	{% comment %} in django, no need to do .all(). do 'all' instead {% endcomment %}
+	{% for comment in current_post.comments.all %}
+		<li>{{comment.body}}</li>
+	{% endfor %}
+</ul>
