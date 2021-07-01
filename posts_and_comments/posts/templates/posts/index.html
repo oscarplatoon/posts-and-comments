@@ -1,0 +1,11 @@
+<h1>My Posts</h1>
+
+{% if posts_list %}
+<ul>
+	{% for post in posts_list %}
+	<li><a href="/posts/{{ post.id }}/">{{ post.title }}</a></li>
+	{% endfor %}
+</ul>
+{% else %}
+<p>No posts yet!</p>
+{% endif %}
