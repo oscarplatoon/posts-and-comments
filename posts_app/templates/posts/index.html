@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My HTML Page</title>
+</head>
+<body>
+  <nav id="body-nav">
+
+  </nav>
+  <main id="body-main">
+    <ul>
+    {% for post in posts %}
+      <li><a href="{% url 'posts_app:post-detail' post.id %}">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+  </main>
+  <footer id="body-footer">
+
+  </footer>
+</body>
+</html>

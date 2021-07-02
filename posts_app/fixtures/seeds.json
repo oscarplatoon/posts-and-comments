@@ -43,5 +43,14 @@
       "body": "I love fireworks!",
       "name": "Don"
     }
+  },
+  {
+    "model": "posts_app.Comment",
+    "pk": 3,
+    "fields": {
+      "post": 3,
+      "body": "I hate fireworks!",
+      "name": "Scooby"
+    }
   }
 ]

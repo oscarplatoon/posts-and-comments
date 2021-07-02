@@ -1,9 +1,19 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from posts_app.models import Post
 
 def index(request):
-    return HttpResponse("Hey, INDEX route is working!!!")
-    
+    stuff = {
+        "posts": Post.objects.all()
+    }
+    return render(request, "posts/index.html", stuff)
 
 def post_detail(request, post_id):
-    return HttpResponse(f"Hey, POST_DETAIL for item {post_id} route is working!!!")
+    post = Post.objects.get(id=post_id)
+    if post == None:
+        HttpResponse("HEY, that post doesn't exist!")
+
+    stuff = {
+        "post": Post.objects.get(id=post_id)
+    }
+    return render(request, "posts/post_detail.html", stuff)
