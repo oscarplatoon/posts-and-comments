@@ -4,11 +4,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Post {{post.id}}</title>
+  <title>Post Details</title>
 </head>
 <body>
   {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
   {% csrf_token %}
-  
+  {{ post.title}}
+  <hr>
+  {{ post.body}}
+  <ul>
+    {% for comment in comments %}
+      <li>
+        {{ comment.body }}
+      </li>
+    {% endfor %}
 </body>
 </html>

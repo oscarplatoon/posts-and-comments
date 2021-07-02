@@ -27,7 +27,8 @@ def post_detail(request, post_id):
             'error_message' : "This post has no comments."
         })
     else:
-        post_comments_list = {'comments': post_comments}
+        
+        post_comments_list = {'comments': post_comments, 'post' : post}
         return render(request,
         'posts/detail.html',
         post_comments_list)
