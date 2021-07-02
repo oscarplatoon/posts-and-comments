@@ -15,7 +15,7 @@ def index(request):
     post_data = {'posts':post_list}
     return render(request, 'posts/index.html', post_data)
 
-def detail(request, post_id):
+def post_detail(request, post_id):
     post = get_post(post_id)
     try:
         post_comments = post.comments.all()
@@ -27,6 +27,7 @@ def detail(request, post_id):
             'error_message' : "This post has no comments."
         })
     else:
+        post_comments_list = {'comments': post_comments}
         return render(request,
         'posts/detail.html',
-        post_comments)
+        post_comments_list)

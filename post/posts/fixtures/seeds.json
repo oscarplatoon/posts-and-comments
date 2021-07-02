@@ -1,0 +1,75 @@
+[
+  {
+    "model": "posts.post",
+    "pk":1,
+    "fields": {
+      "title": "First Post",
+      "body": "Ipsum Lorem Deliciousness."
+    }
+  },
+  {
+    "model": "posts.Post",
+    "pk": 2,
+    "fields": {
+      "title": "Second Post",
+      "body": "Ipsum Lorem Tripped The Light Fantastic."
+    }
+  },
+  {
+    "model": "posts.Post",
+    "pk": 3,
+    "fields": {
+      "title": "Third Post",
+      "body": "Lorem Ipsum Hocus Pocus"
+    }
+  },
+
+  {
+    "model": "posts.Comment",
+    "pk": 1,
+    "fields": {
+      "body": "I heard you like mudkips.",
+      "post": "1"
+    }
+  },
+  {
+    "model": "posts.Comment",
+    "pk": 2,
+    "fields": {
+      "body": "I heard you like mudkips.",
+      "post": "1"
+    }
+  },
+  {
+    "model": "posts.Comment",
+    "pk": 3,
+    "fields": {
+      "body": "I put a comment on your post.",
+      "post": "2"
+    }
+  },
+  {
+    "model": "posts.Comment",
+    "pk": 4,
+    "fields": {
+      "body": "If it wasn't for my horse, I wouldn't have made it through college.",
+      "post": "2"
+    }
+  },
+  {
+    "model": "posts.Comment",
+    "pk": 5,
+    "fields": {
+      "body": "And other filler text.",
+      "post": "3"
+    }
+  },
+  {
+    "model": "posts.Comment",
+    "pk": 6,
+    "fields": {
+      "body": "Tread carefully",
+      "post": "3"
+    }
+  }
+]
