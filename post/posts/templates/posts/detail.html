@@ -9,9 +9,11 @@
 <body>
   {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
   {% csrf_token %}
-  {{ post.title}}
+  <h1> {{ post.title}} </h1>
   <hr>
-  {{ post.body}}
+  <h2>
+    {{ post.body}}
+  </h2>
   <ul>
     {% for comment in comments %}
       <li>
