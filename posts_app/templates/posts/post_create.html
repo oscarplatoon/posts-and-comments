@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My HTML Page</title>
+</head>
+<body>
+  <nav id="body-nav">
+
+  </nav>
+  <main id="body-main">
+    <h1>Create a new post!</h1>
+    <form action="{% url 'posts_app:post-create' %}" method="POST">
+      {% csrf_token %}
+      <label>Title: </label>
+      <input id="title" name="title" placeholder="title"></input>
+      <br/>
+      <label>Body: </label>
+      <input id="body" name="body" placeholder="enter text"></input>
+      <br/>
+      <label>Author: </label>
+      <input id="name" name="name" placeholder="your name"></input>
+      <br/>
+      <button type="submit">Add</button>
+    </form>
+  </main>
+  <footer id="body-footer">
+
+  </footer>
+</body>
+</html>
