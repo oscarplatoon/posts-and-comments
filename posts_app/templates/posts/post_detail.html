@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ post.title }}</title>
+</head>
+<body>
+  <nav id="body-nav">
+
+  </nav>
+  <main id="body-main">
+    <h1>{{ post.title }}</h1>
+    <h2>{{ post.name }}</h2>
+    <p>{{ post.body }}</p>
+    {% for comment in post.comments.all %}
+      <p><i>{{ comment.body }}</i> by {{ comment.name }}</p>
+    {% endfor %}
+  </main>
+  <footer id="body-footer">
+
+  </footer>
+</body>
+</html>

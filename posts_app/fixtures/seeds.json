@@ -1,0 +1,56 @@
+[
+  {
+    "model": "posts_app.Post",
+    "pk": 1,
+    "fields": {
+      "title": "Friday",
+      "body": "Today is Friday!!!!!!!!!!!!!!",
+      "name": "Ankur"
+    }
+  },
+  {
+    "model": "posts_app.Post",
+    "pk": 2,
+    "fields": {
+      "title": "Saturday",
+      "body": "Tomorrow is Saturday!!",
+      "name": "Stephen"
+    }
+  },
+  {
+    "model": "posts_app.Post",
+    "pk": 3,
+    "fields": {
+      "title": "Sunday",
+      "body": "Sunday is July 4th!",
+      "name": "Jack"
+    }
+  },
+  {
+    "model": "posts_app.Comment",
+    "pk": 1,
+    "fields": {
+      "post": 1,
+      "body": "Happy Friday!",
+      "name": "Sarah"
+    }
+  },
+  {
+    "model": "posts_app.Comment",
+    "pk": 2,
+    "fields": {
+      "post": 3,
+      "body": "I love fireworks!",
+      "name": "Don"
+    }
+  },
+  {
+    "model": "posts_app.Comment",
+    "pk": 3,
+    "fields": {
+      "post": 3,
+      "body": "I hate fireworks!",
+      "name": "Scooby"
+    }
+  }
+]
